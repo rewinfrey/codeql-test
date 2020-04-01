@@ -18,7 +18,6 @@ predicate macroCovering(DefectResult r) {
   )
 }
 
-
 from DefectResult res
 where not macroCovering(res)
 select res, res.getMessage()
